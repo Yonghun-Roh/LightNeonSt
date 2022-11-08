@@ -90,16 +90,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="yellow_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorBTN:" destination="o7i-F9-Kko" eventType="touchUpInside" id="WW0-oY-ujE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMO-mI-ZgK">
                                                 <rect key="frame" x="69" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="purple_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorBTN:" destination="o7i-F9-Kko" eventType="touchUpInside" id="pSy-U7-Rzi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lT-5x-z2S">
                                                 <rect key="frame" x="138" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="green_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorBTN:" destination="o7i-F9-Kko" eventType="touchUpInside" id="Abu-aT-S1I"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -121,16 +130,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="black_circle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorBTN:" destination="o7i-F9-Kko" eventType="touchUpInside" id="bf4-v3-RR8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-PI-SPw">
                                                 <rect key="frame" x="69" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="blue_circle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorBTN:" destination="o7i-F9-Kko" eventType="touchUpInside" id="HF5-S3-QVv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzP-wY-kOU">
                                                 <rect key="frame" x="138" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="orange_cricle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorBTN:" destination="o7i-F9-Kko" eventType="touchUpInside" id="znS-22-bHu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -140,6 +158,9 @@
                                 <rect key="frame" x="180.5" y="542.5" width="53.5" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="저장"/>
+                                <connections>
+                                    <action selector="tapSaveBTN:" destination="o7i-F9-Kko" eventType="touchUpInside" id="pFs-9Z-TXm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qc8-2U-g62"/>
@@ -159,6 +180,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="0Qq-nn-GaF"/>
+                    <connections>
+                        <outlet property="blackBTN" destination="kAM-8L-o0j" id="maA-ka-0qO"/>
+                        <outlet property="blueBTN" destination="UVX-PI-SPw" id="ld6-2m-1Z6"/>
+                        <outlet property="greenBTN" destination="7lT-5x-z2S" id="pKo-65-3YH"/>
+                        <outlet property="orageBTN" destination="pzP-wY-kOU" id="xyS-QV-wIp"/>
+                        <outlet property="puppleBTN" destination="IMO-mI-ZgK" id="5Ru-eB-DSz"/>
+                        <outlet property="textField" destination="Pbv-sh-m0d" id="Mxd-19-GQX"/>
+                        <outlet property="yellowBTN" destination="BPa-gS-T6S" id="brT-yS-i09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwJ-Vc-lXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
