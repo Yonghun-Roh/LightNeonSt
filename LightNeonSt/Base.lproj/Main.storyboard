@@ -37,6 +37,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentsLabel" destination="Qa4-4q-9HK" id="JiM-HL-FIf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +48,7 @@
         <!--설정-->
         <scene sceneID="zmp-27-nXl">
             <objects>
-                <viewController id="o7i-F9-Kko" sceneMemberID="viewController">
+                <viewController id="o7i-F9-Kko" customClass="SettingViewController" customModule="LightNeonSt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4MS-BE-Hpe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
