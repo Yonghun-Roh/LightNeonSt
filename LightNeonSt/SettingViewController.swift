@@ -8,7 +8,7 @@
 import UIKit
 
 protocol LEDBoardSettingDelegate: AnyObject {
-    func changeSetting(text: String, textColor: UIColor, backgroundColor: UIColor)
+    func changeSetting(text: String?, textColor: UIColor, backgroundColor: UIColor)
 }
 
 class SettingViewController: UIViewController {
@@ -22,14 +22,24 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var orageBTN: UIButton!
     
     weak var delegate: LEDBoardSettingDelegate?
+    var ledText: String?
     var textColor: UIColor = .yellow
     var backgroundColor: UIColor = .black
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.configureView()
+        
+       
+    }
+    
+    private func configureView() {
+        if let ledText = self.ledText {
+            self.textField.text = ledText
+        }
+        self.changeTextColor(color: self.textColor)
+        self.changeBackgroundColor(color: self.backgroundColor)
     }
     @IBAction func tapTextColorBTN(_ sender: UIButton) {
         if sender == self.yellowBTN {
